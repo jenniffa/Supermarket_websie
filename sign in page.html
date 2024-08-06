@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ffc107;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
+
+.info {
+  color: #777;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 5px;
+}
+</style>
+</head>
+<body>
+  <header style="text-align: center;" style="margin: 10%;">
+      <a href="home.html" style="padding: 3%;">
+          Home
+      </a>    
+      <a href="Products menu.html"style="padding: 3%;">
+       Products 
+      </a>
+      <a href="my shoping.html" style="padding: 3%;">
+     Cart
+      </a>
+      <a href="contect.html" style="padding: 3%;">
+          Contact Us
+      </a>
+      <a href="About US.html" style="padding: 3%;">
+          About us 
+      </a>
+      <a href="sign in page.html" style="padding: 03%;">
+        Sign in 
+      </a>
+  </header>
+  
+<div class="container" style="padding: top 16%; ;">
+  <h1>Welcome</h1>
+  <div>
+    <input type="radio" name="accountType" checked>
+    <label for="createAccount">Create account</label>
+  </div>
+
+  <label for="firstName">First and last name</label>
+  <input type="text" id="firstName" placeholder="Enter your name">
+
+  <label for="mobileNumber">Mobile number</label>
+  <div>
+    <select id="countryCode">
+      <option value="IN">+91</option>
+      </select>
+    <input type="text" id="mobileNumber" placeholder="Enter your mobile number">
+  </div>
+
+  <label for="password">Set password</label>
+  <input type="password" id="password" placeholder="Enter your password">
+  <span class="info">Passwords must be at least 6 characters.</span>
+
+  <div class="checkbox-container">
+    <input type="checkbox" id="showPassword">
+    <label for="showPassword">Show password</label>
+  </div>
+
+  <button>Verify mobile number</button>
+
+  <p class="info">By creating an account or logging in, you agree to Amazon's <a href="#">Conditions of Use and Privacy Policy.</a></p>
+</div>
+
+</body>
+</html>
